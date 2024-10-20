@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# .gitignore
+# Node modules and other files to be ignored
+node_modules/
+.env

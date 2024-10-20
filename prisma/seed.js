@@ -22,3 +22,7 @@ main()
   .finally(async () => {
     await prisma.$disconnect();
   });
+
+  // prisma/seed.js
+// This file serves as a seed script for initializing the database with data.
+// The actual seeding logic is defined in data/seed.js for clarity and organization.

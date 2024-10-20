@@ -17,3 +17,5 @@ app.use('/api', employeesRoutes);
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`); // Log server status to console
 });
+
+
