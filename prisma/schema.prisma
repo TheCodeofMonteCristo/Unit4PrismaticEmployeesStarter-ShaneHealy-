@@ -1,0 +1,16 @@
+// prisma/schema.prisma
+// Prisma schema definition for the database and models
+datasource db {
+  provider = "postgresql" // Set the database provider to PostgreSQL
+  url      = env("DATABASE_URL") // Use the DATABASE_URL from environment variables
+}
+
+generator client {
+  provider = "prisma-client-js" // Generate the Prisma Client
+}
+
+// Define the Employee model
+model Employee {
+  id   Int     @id @default(autoincrement()) // Unique ID for each employee, auto-incrementing
+  name String // Name of the employee
+}
